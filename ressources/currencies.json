@@ -1,0 +1,245 @@
+{
+    "success": true,
+    "result": {
+        "currencies": [
+            {
+                "currency": "BAT",
+                "name": "Basic Attention Token",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "22.6"
+            },
+            {
+                "currency": "USD",
+                "name": "US Dollar",
+                "min_unit": "0.01",
+                "deposit_fee": "10",
+                "withdrawal_fee": "50"
+            },
+            {
+                "currency": "GNT",
+                "name": "Golem Network Token",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "25.85"
+            },
+            {
+                "currency": "NGC",
+                "name": "NAGA Coin",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "8.82"
+            },
+            {
+                "currency": "PAY",
+                "name": "TenXPay",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "5.43"
+            },
+            {
+                "currency": "REP",
+                "name": "Augur",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "0.16"
+            },
+            {
+                "currency": "EOS",
+                "name": "EOS",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "1.03"
+            },
+            {
+                "currency": "COB",
+                "name": "Cobinhood Token",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "37.06"
+            },
+            {
+                "currency": "FUN",
+                "name": "FunFair",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "135.55"
+            },
+            {
+                "currency": "ETHOS",
+                "name": "Ethos",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "1.99"
+            },
+            {
+                "currency": "CMT",
+                "name": "CyberMiles Token",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "47"
+            },
+            {
+                "currency": "ETH",
+                "name": "Ethereum",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "0.007"
+            },
+            {
+                "currency": "SAN",
+                "name": "Santiment",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "4.83"
+            },
+            {
+                "currency": "DGD",
+                "name": "Digix Global",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "0.02"
+            },
+            {
+                "currency": "OCN",
+                "name": "OCoin",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "348.61"
+            },
+            {
+                "currency": "CVC",
+                "name": "Civic",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "17.72"
+            },
+            {
+                "currency": "MANA",
+                "name": "Decentraland",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "78.84"
+            },
+            {
+                "currency": "SPHTX",
+                "name": "SophiaTX",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "17.76"
+            },
+            {
+                "currency": "BDG",
+                "name": "BitDegree",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "67.22"
+            },
+            {
+                "currency": "GTC",
+                "name": "Game.com Token",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "116.75"
+            },
+            {
+                "currency": "ICN",
+                "name": "Iconomi",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "5.26"
+            },
+            {
+                "currency": "ENJ",
+                "name": "Enjin Coin",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "55.98"
+            },
+            {
+                "currency": "VOISE",
+                "name": "Voise",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "292.1"
+            },
+            {
+                "currency": "IOST",
+                "name": "IOSToken",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "224.23"
+            },
+            {
+                "currency": "ZRX",
+                "name": "0x Protocol Token",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "7.86"
+            },
+            {
+                "currency": "TRX",
+                "name": "TRON",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "232.17"
+            },
+            {
+                "currency": "GNO",
+                "name": "Gnosis",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "0.05"
+            },
+            {
+                "currency": "STK",
+                "name": "STK Token",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "42.9"
+            },
+            {
+                "currency": "DRGN",
+                "name": "DragonChain",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "5.61"
+            },
+            {
+                "currency": "OMG",
+                "name": "OmiseGo",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "0.71"
+            },
+            {
+                "currency": "INS",
+                "name": "INS Ecosystem",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "3.75"
+            },
+            {
+                "currency": "SNT",
+                "name": "StatusNetwork",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "39.25"
+            },
+            {
+                "currency": "BTC",
+                "name": "Bitcoin",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "0.001"
+            },
+            {
+                "currency": "UTNP",
+                "name": "Universa",
+                "min_unit": "0.00000001",
+                "deposit_fee": "0",
+                "withdrawal_fee": "37.06"
+            }
+        ]
+    }
+}

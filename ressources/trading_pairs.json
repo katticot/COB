@@ -1,0 +1,535 @@
+{
+    "success": true,
+    "result": {
+        "trading_pairs": [
+            {
+                "id": "STK-BTC",
+                "base_currency_id": "STK",
+                "quote_currency_id": "BTC",
+                "base_max_size": "5107643.588",
+                "base_min_size": "153.229",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "TRX-BTC",
+                "base_currency_id": "TRX",
+                "quote_currency_id": "BTC",
+                "base_max_size": "27639885.46",
+                "base_min_size": "829.196",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "TRX-ETH",
+                "base_currency_id": "TRX",
+                "quote_currency_id": "ETH",
+                "base_max_size": "27639885.46",
+                "base_min_size": "829.196",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "STK-ETH",
+                "base_currency_id": "STK",
+                "quote_currency_id": "ETH",
+                "base_max_size": "5107643.588",
+                "base_min_size": "153.229",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "VOISE-BTC",
+                "base_currency_id": "VOISE",
+                "quote_currency_id": "BTC",
+                "base_max_size": "34774867.507",
+                "base_min_size": "1043.246",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "VOISE-ETH",
+                "base_currency_id": "VOISE",
+                "quote_currency_id": "ETH",
+                "base_max_size": "34774867.507",
+                "base_min_size": "1043.246",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "FUN-BTC",
+                "base_currency_id": "FUN",
+                "quote_currency_id": "BTC",
+                "base_max_size": "16137934.15",
+                "base_min_size": "484.138",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "GNT-BTC",
+                "base_currency_id": "GNT",
+                "quote_currency_id": "BTC",
+                "base_max_size": "3077964.849",
+                "base_min_size": "92.338",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "FUN-ETH",
+                "base_currency_id": "FUN",
+                "quote_currency_id": "ETH",
+                "base_max_size": "16137934.15",
+                "base_min_size": "484.138",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "GNO-BTC",
+                "base_currency_id": "GNO",
+                "quote_currency_id": "BTC",
+                "base_max_size": "7096.627",
+                "base_min_size": "0.212",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "DRGN-BTC",
+                "base_currency_id": "DRGN",
+                "quote_currency_id": "BTC",
+                "base_max_size": "668516.228",
+                "base_min_size": "20.055",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "DRGN-ETH",
+                "base_currency_id": "DRGN",
+                "quote_currency_id": "ETH",
+                "base_max_size": "668516.228",
+                "base_min_size": "20.055",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "ZRX-BTC",
+                "base_currency_id": "ZRX",
+                "quote_currency_id": "BTC",
+                "base_max_size": "936680.404",
+                "base_min_size": "28.1",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "BTC-USD",
+                "base_currency_id": "BTC",
+                "quote_currency_id": "USD",
+                "base_max_size": "121.764",
+                "base_min_size": "0",
+                "quote_increment": "0.1"
+            },
+            {
+                "id": "ETH-USD",
+                "base_currency_id": "ETH",
+                "quote_currency_id": "USD",
+                "base_max_size": "1244.26",
+                "base_min_size": "0",
+                "quote_increment": "0.01"
+            },
+            {
+                "id": "ETH-BTC",
+                "base_currency_id": "ETH",
+                "quote_currency_id": "BTC",
+                "base_max_size": "1244.26",
+                "base_min_size": "0.037",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "COB-USD",
+                "base_currency_id": "COB",
+                "quote_currency_id": "USD",
+                "base_max_size": "4412400.61",
+                "base_min_size": "0",
+                "quote_increment": "0.001"
+            },
+            {
+                "id": "GNT-ETH",
+                "base_currency_id": "GNT",
+                "quote_currency_id": "ETH",
+                "base_max_size": "3077964.849",
+                "base_min_size": "92.338",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "COB-BTC",
+                "base_currency_id": "COB",
+                "quote_currency_id": "BTC",
+                "base_max_size": "4412400.61",
+                "base_min_size": "132.372",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "NGC-BTC",
+                "base_currency_id": "NGC",
+                "quote_currency_id": "BTC",
+                "base_max_size": "1050897.045",
+                "base_min_size": "31.526",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "NGC-ETH",
+                "base_currency_id": "NGC",
+                "quote_currency_id": "ETH",
+                "base_max_size": "1050897.045",
+                "base_min_size": "31.526",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "OMG-BTC",
+                "base_currency_id": "OMG",
+                "quote_currency_id": "BTC",
+                "base_max_size": "85416.791",
+                "base_min_size": "2.562",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "OMG-ETH",
+                "base_currency_id": "OMG",
+                "quote_currency_id": "ETH",
+                "base_max_size": "85416.791",
+                "base_min_size": "2.562",
+                "quote_increment": "0.00001"
+            },
+            {
+                "id": "ZRX-ETH",
+                "base_currency_id": "ZRX",
+                "quote_currency_id": "ETH",
+                "base_max_size": "936680.404",
+                "base_min_size": "28.1",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "DGD-BTC",
+                "base_currency_id": "DGD",
+                "quote_currency_id": "BTC",
+                "base_max_size": "3463.995",
+                "base_min_size": "0.103",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "GNO-ETH",
+                "base_currency_id": "GNO",
+                "quote_currency_id": "ETH",
+                "base_max_size": "7096.627",
+                "base_min_size": "0.212",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "UTNP-BTC",
+                "base_currency_id": "UTNP",
+                "quote_currency_id": "BTC",
+                "base_max_size": "4412400.61",
+                "base_min_size": "132.372",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "COB-ETH",
+                "base_currency_id": "COB",
+                "quote_currency_id": "ETH",
+                "base_max_size": "4412400.61",
+                "base_min_size": "132.372",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "CMT-BTC",
+                "base_currency_id": "CMT",
+                "quote_currency_id": "BTC",
+                "base_max_size": "5596221.431",
+                "base_min_size": "167.886",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "SAN-BTC",
+                "base_currency_id": "SAN",
+                "quote_currency_id": "BTC",
+                "base_max_size": "575271.384",
+                "base_min_size": "17.258",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "CMT-ETH",
+                "base_currency_id": "CMT",
+                "quote_currency_id": "ETH",
+                "base_max_size": "5596221.431",
+                "base_min_size": "167.886",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "SAN-ETH",
+                "base_currency_id": "SAN",
+                "quote_currency_id": "ETH",
+                "base_max_size": "575271.384",
+                "base_min_size": "17.258",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "SPHTX-BTC",
+                "base_currency_id": "SPHTX",
+                "quote_currency_id": "BTC",
+                "base_max_size": "2115233.701",
+                "base_min_size": "63.457",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "SPHTX-ETH",
+                "base_currency_id": "SPHTX",
+                "quote_currency_id": "ETH",
+                "base_max_size": "2115233.701",
+                "base_min_size": "63.457",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "SNT-BTC",
+                "base_currency_id": "SNT",
+                "quote_currency_id": "BTC",
+                "base_max_size": "4673006.378",
+                "base_min_size": "140.19",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "REP-BTC",
+                "base_currency_id": "REP",
+                "quote_currency_id": "BTC",
+                "base_max_size": "19320.908",
+                "base_min_size": "0.579",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "SNT-ETH",
+                "base_currency_id": "SNT",
+                "quote_currency_id": "ETH",
+                "base_max_size": "4673006.378",
+                "base_min_size": "140.19",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "UTNP-ETH",
+                "base_currency_id": "UTNP",
+                "quote_currency_id": "ETH",
+                "base_max_size": "4412400.61",
+                "base_min_size": "132.372",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "BDG-BTC",
+                "base_currency_id": "BDG",
+                "quote_currency_id": "BTC",
+                "base_max_size": "8002560.819",
+                "base_min_size": "240.076",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "BDG-ETH",
+                "base_currency_id": "BDG",
+                "quote_currency_id": "ETH",
+                "base_max_size": "8002560.819",
+                "base_min_size": "240.076",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "REP-ETH",
+                "base_currency_id": "REP",
+                "quote_currency_id": "ETH",
+                "base_max_size": "19320.908",
+                "base_min_size": "0.579",
+                "quote_increment": "0.00001"
+            },
+            {
+                "id": "EOS-BTC",
+                "base_currency_id": "EOS",
+                "quote_currency_id": "BTC",
+                "base_max_size": "123009.551",
+                "base_min_size": "3.69",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "PAY-BTC",
+                "base_currency_id": "PAY",
+                "quote_currency_id": "BTC",
+                "base_max_size": "647119.348",
+                "base_min_size": "19.413",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "ENJ-BTC",
+                "base_currency_id": "ENJ",
+                "quote_currency_id": "BTC",
+                "base_max_size": "6664978.205",
+                "base_min_size": "199.949",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "ENJ-ETH",
+                "base_currency_id": "ENJ",
+                "quote_currency_id": "ETH",
+                "base_max_size": "6664978.205",
+                "base_min_size": "199.949",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "PAY-ETH",
+                "base_currency_id": "PAY",
+                "quote_currency_id": "ETH",
+                "base_max_size": "647119.348",
+                "base_min_size": "19.413",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "EOS-ETH",
+                "base_currency_id": "EOS",
+                "quote_currency_id": "ETH",
+                "base_max_size": "123009.551",
+                "base_min_size": "3.69",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "IOST-BTC",
+                "base_currency_id": "IOST",
+                "quote_currency_id": "BTC",
+                "base_max_size": "26694713.912",
+                "base_min_size": "800.841",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "BAT-BTC",
+                "base_currency_id": "BAT",
+                "quote_currency_id": "BTC",
+                "base_max_size": "2691478.509",
+                "base_min_size": "80.744",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "BAT-ETH",
+                "base_currency_id": "BAT",
+                "quote_currency_id": "ETH",
+                "base_max_size": "2691478.509",
+                "base_min_size": "80.744",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "GTC-BTC",
+                "base_currency_id": "GTC",
+                "quote_currency_id": "BTC",
+                "base_max_size": "13898830.413",
+                "base_min_size": "416.964",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "GTC-ETH",
+                "base_currency_id": "GTC",
+                "quote_currency_id": "ETH",
+                "base_max_size": "13898830.413",
+                "base_min_size": "416.964",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "DGD-ETH",
+                "base_currency_id": "DGD",
+                "quote_currency_id": "ETH",
+                "base_max_size": "3463.995",
+                "base_min_size": "0.103",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "IOST-ETH",
+                "base_currency_id": "IOST",
+                "quote_currency_id": "ETH",
+                "base_max_size": "26694713.912",
+                "base_min_size": "800.841",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "ETHOS-BTC",
+                "base_currency_id": "ETHOS",
+                "quote_currency_id": "BTC",
+                "base_max_size": "237900.952",
+                "base_min_size": "7.137",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "CVC-BTC",
+                "base_currency_id": "CVC",
+                "quote_currency_id": "BTC",
+                "base_max_size": "2109775.857",
+                "base_min_size": "63.293",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "CVC-ETH",
+                "base_currency_id": "CVC",
+                "quote_currency_id": "ETH",
+                "base_max_size": "2109775.857",
+                "base_min_size": "63.293",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "INS-BTC",
+                "base_currency_id": "INS",
+                "quote_currency_id": "BTC",
+                "base_max_size": "447443.308",
+                "base_min_size": "13.423",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "INS-ETH",
+                "base_currency_id": "INS",
+                "quote_currency_id": "ETH",
+                "base_max_size": "447443.308",
+                "base_min_size": "13.423",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "OCN-BTC",
+                "base_currency_id": "OCN",
+                "quote_currency_id": "BTC",
+                "base_max_size": "41501697.419",
+                "base_min_size": "1245.05",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "OCN-ETH",
+                "base_currency_id": "OCN",
+                "quote_currency_id": "ETH",
+                "base_max_size": "41501697.419",
+                "base_min_size": "1245.05",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "ICN-BTC",
+                "base_currency_id": "ICN",
+                "quote_currency_id": "BTC",
+                "base_max_size": "626688.141",
+                "base_min_size": "18.8",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "ICN-ETH",
+                "base_currency_id": "ICN",
+                "quote_currency_id": "ETH",
+                "base_max_size": "626688.141",
+                "base_min_size": "18.8",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "MANA-BTC",
+                "base_currency_id": "MANA",
+                "quote_currency_id": "BTC",
+                "base_max_size": "9386322.251",
+                "base_min_size": "281.589",
+                "quote_increment": "0.00000001"
+            },
+            {
+                "id": "MANA-ETH",
+                "base_currency_id": "MANA",
+                "quote_currency_id": "ETH",
+                "base_max_size": "9386322.251",
+                "base_min_size": "281.589",
+                "quote_increment": "0.0000001"
+            },
+            {
+                "id": "ETHOS-ETH",
+                "base_currency_id": "ETHOS",
+                "quote_currency_id": "ETH",
+                "base_max_size": "237900.952",
+                "base_min_size": "7.137",
+                "quote_increment": "0.0000001"
+            }
+        ]
+    }
+}
