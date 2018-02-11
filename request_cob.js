@@ -23,7 +23,6 @@ function callback(error, response, body) {
     if (!error && response.statusCode == 200) {
         var json_response =JSON.parse(body).result.orderbook
         var spread = ((json_response.bids[0][0]-json_response.asks[0][0])/json_response.bids[0][0]*100)
-        //var spread = 0.1-0.099
         console.log(json_response.bids[0]);
         console.log(json_response.asks[0]);
         console.log(spread);
