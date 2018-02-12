@@ -20,23 +20,24 @@ const options = {
     url: host+get_all_trading_pairs
 };
 
-
-//options.url=host+get_all_trading_pairs
-function callback(error, response, body) {    
-    if (!error && response.statusCode == 200) {
-        // console.log(json_response);
-        var reponse =JSON.parse(body).result.trading_pairs
-        for (var pair in reponse) {
-            pairs.push(reponse[pair].id)
-          }
- 
-        for (var pair in pairs) {
-    console.log(pairs[pair])
-  }
+function lister_les_paires () {
+    function callback(error, response, body) {    
+        if (!error && response.statusCode == 200) {
+            // console.log(json_response);
+            var reponse =JSON.parse(body).result.trading_pairs
+            for (var pair in reponse) {
+                pairs.push(reponse[pair].id)
+              }
+     
+            for (var pair in pairs) {
+        console.log(pairs[pair])
+      }
+        }
     }
+    request(options, callback);
 }
 
-request(options, callback);
+lister_les_paires()
 
 
 
