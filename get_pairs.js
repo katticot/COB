@@ -36,8 +36,7 @@ function lister_les_paires () {
     }
     request(options, callback);
 }
-
-lister_les_paires()
+let get_all_pairs = lister_les_paires;
 
 
 

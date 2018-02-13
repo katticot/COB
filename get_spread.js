@@ -37,7 +37,7 @@ var options = {
 request(options, callback);
  }
 
- var public = {
+ let public = {
     "get_spread2": function(paire) {
         options.url+=paire
         function callback(error, response, body) {
@@ -52,7 +52,7 @@ request(options, callback);
 }
 }
 //get_spread("GTC-BTC");
-//public.get_spread2("ETHOS-ETH")
+public.get_spread2("ETHOS-ETH")
 
 
 

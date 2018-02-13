@@ -1,3 +1,2 @@
-var maFonction = require('./get_spread');
-var test = new maFonction ()
-console.log(maFonction)
+var maFonction = require('./get_pairs.js');
+console.log(maFonction);
