@@ -24,21 +24,11 @@ var options = {
 
 
 
- function get_spread (paire) {
-     options.url+=paire
-    function callback(error, response, body) {
-        if (!error && response.statusCode == 200) {
-            var json_response =JSON.parse(body).result.orderbook
-            var spread = ((json_response.bids[0][0]-json_response.asks[0][0])/json_response.bids[0][0]*100)
-            console.log("URL :"+options.url)
-            console.log(paire + " :"+spread);
-        }
-    }
-request(options, callback);
- }
+ 
+ 
 
  let public = {
-    "get_spread2": function(paire) {
+    "get_spread": function(paire) {
         options.url+=paire
         function callback(error, response, body) {
             if (!error && response.statusCode == 200) {
@@ -51,8 +41,10 @@ request(options, callback);
     request(options, callback);
 }
 }
-//get_spread("GTC-BTC");
-public.get_spread2("ETHOS-ETH")
+
+let get_spread
+module.exports.get_spread=public.get_spread;
+//public.get_spread2("ETHOS-ETH")
 
 
 

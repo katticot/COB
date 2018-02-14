@@ -1,3 +1,5 @@
-var maFonction = require('./get_pairs.js');
-console.log(maFonction);
-maFonction.get_all_pairs()
+var paire = require('./get_pairs.js');
+var spread = require('./get_spread.js');
+
+paire.get_all_pairs();
+spread.get_spread("ETHOS-ETH");
