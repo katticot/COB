@@ -15,7 +15,7 @@ const get_all_trading_pairs ="/v1/market/trading_pairs"
 const get_order_book        = "/v1/market/orderbooks/" // /v1/market/orderbooks/<trading_pair_id> get with get_all_trading_pairs
 const get_trading_statistics="/v1/market/stats/"
 const get_tickers           = "/v1/market/tickers/" // /v1/market/tickers/<trading_pair_id> get with get_all_trading_pairs
-const recent_trades         ="/v1/market/trades/"    // /v1/market/trades//<trading_pair_id> get with get_all_trading_pairs      
+module.exports ;const recent_trades         ="/v1/market/trades/"    // /v1/market/trades//<trading_pair_id> get with get_all_trading_pairs      
 const options = {
     url: host+get_all_trading_pairs
 };
@@ -33,10 +33,11 @@ function lister_les_paires () {
         console.log(pairs[pair])
       }
         }
-    }
+    };
     request(options, callback);
-}
-let get_all_pairs = lister_les_paires;
+};
+let get_all_pairs;
+module.exports.get_all_pairs = lister_les_paires;
 
 
 
