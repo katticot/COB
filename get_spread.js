@@ -35,14 +35,14 @@ var options = {
                 //var json_response =JSON.parse(body).result.orderbook
                 //var spread = ((json_response.bids[0][0]-json_response.asks[0][0])/json_response.bids[0][0]*100)
                 console.log("URL :"+options.url)
-                console.log(paire + " :"+ public.get_spread(JSON.parse(body).result.orderbook));
+                console.log(paire + " :"+ public.get_spread(body));
             }
     }
     request(options, callback);
 },
-     "get_spread" : function (orderbook){
-         var json_response =orderbook
-         var spread = ((json_response.bids[0][0]-json_response.asks[0][0])/json_response.bids[0][0]*100)
+     "get_spread" : function (body){
+         let orderbook=JSON.parse(body).result.orderbook
+         var spread = ((orderbook.bids[0][0]-orderbook.asks[0][0])/orderbook.bids[0][0]*100)
          console.log(" :"+spread);
          return spread
      }
@@ -50,7 +50,9 @@ var options = {
 };
 
 let get_spread;
-module.exports.get_spread=public.request_get_spread;
+let request_get_spread;
+module.exports.request_get_spread=public.request_get_spread;
+module.exports.get_spread=public.get_spread;
 
 //public.request_get_spread("ETHOS-ETH")
 

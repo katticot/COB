@@ -1,5 +1,7 @@
 var axios = require("axios");
-const host ="https://api.cobinhood.com"
+const host ="https://api.cobinhood.com";
+var spread = require('./get_spread.js');
+
 //Http to curl :https://curlbuilder.com/
 //curl to JS   :https://curl.trillworks.com/
 // Public
@@ -37,7 +39,9 @@ function multiple_axios() {
 .then(axios.spread(function (userResponse, reposResponse) {
         //... but this callback will be executed only when both requests are complete.
         console.log('User', userResponse.data);
-        console.log('Repositories', reposResponse.data);
+        //console.log('Repositories', reposResponse.data);
+       // console.log('Repositories', reposResponse.data.result.orderbook);
+       // console.log('request', spread.get_spread(reposResponse.data));
     }));
 }
 multiple_axios()
