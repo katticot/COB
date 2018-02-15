@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "axios": "^0.17.1",
     "node-telegram-bot-api": "^0.30.0",
     "request": "^2.83.0",
     "telegram-bot-api": "^1.2.0"

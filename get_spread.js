@@ -12,9 +12,9 @@ const get_all_currenciers   ="/v1/market/currencies"
 const get_all_trading_pairs ="/v1/market/trading_pairs"
 const get_order_book        = "/v1/market/orderbooks/" // /v1/market/orderbooks/<trading_pair_id> get with get_all_trading_pairs
 const get_trading_statistics="/v1/market/stats/"
-const get_tickers           = "/v1/market/tickers/" // /v1/market/tickers/<trading_pair_id> get with get_all_trading_pairs
-const recent_trades         ="/v1/market/trades/"    // /v1/market/trades//<trading_pair_id> get with get_all_trading_pairs      
-const url_de_requete = host+get_order_book
+const get_tickers           = "/v1/market/tickers/" ;// /v1/market/tickers/<trading_pair_id> get with get_all_trading_pairs
+const recent_trades         ="/v1/market/trades/" ;   // /v1/market/trades//<trading_pair_id> get with get_all_trading_pairs
+const url_de_requete = host+get_order_book;
 var options = {
     url: url_de_requete
 };
@@ -28,23 +28,31 @@ var options = {
  
 
  let public = {
-    "get_spread": function(paire) {
+    "request_get_spread": function(paire) {
         options.url+=paire
         function callback(error, response, body) {
             if (!error && response.statusCode == 200) {
-                var json_response =JSON.parse(body).result.orderbook
-                var spread = ((json_response.bids[0][0]-json_response.asks[0][0])/json_response.bids[0][0]*100)
+                //var json_response =JSON.parse(body).result.orderbook
+                //var spread = ((json_response.bids[0][0]-json_response.asks[0][0])/json_response.bids[0][0]*100)
                 console.log("URL :"+options.url)
-                console.log(paire + " :"+spread);
+                console.log(paire + " :"+ public.get_spread(JSON.parse(body).result.orderbook));
             }
     }
     request(options, callback);
-}
-}
+},
+     "get_spread" : function (orderbook){
+         var json_response =orderbook
+         var spread = ((json_response.bids[0][0]-json_response.asks[0][0])/json_response.bids[0][0]*100)
+         console.log(" :"+spread);
+         return spread
+     }
 
-let get_spread
-module.exports.get_spread=public.get_spread;
-//public.get_spread2("ETHOS-ETH")
+};
+
+let get_spread;
+module.exports.get_spread=public.request_get_spread;
+
+//public.request_get_spread("ETHOS-ETH")
 
 
 

@@ -34,17 +34,17 @@ var options = {
 // }
 
 options.url=host+get_all_trading_pairs
-function callback(error, response, body) {    
+function callback(error, response, body) {
     if (!error && response.statusCode == 200) {
         // console.log(json_response);
         var json_response =JSON.parse(body).result.trading_pairs
         for (var pair in json_response) {
             pairs.push(json_response[pair].id)
           }
-          
 
- 
-for (var pair in pairs) {
+
+
+    for (var pair in pairs) {
 
     console.log("paire :"+pairs[pair])
 
@@ -61,7 +61,7 @@ for (var pair in pairs) {
     }
   }
         // console.log(options.url);
-        
+
     }
 }
 
