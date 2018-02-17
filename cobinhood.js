@@ -82,8 +82,7 @@ function callback(error, response, body) {
 
 
 
-console.log(pairs)
-request(options, callback);
+//request(options, callback);
 
 
 

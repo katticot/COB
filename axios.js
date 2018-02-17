@@ -5,42 +5,31 @@ let cobin_hood = require('./cobinhood');
 //curl to JS   :https://curl.trillworks.com/
 
 
-function get_paire (){
-    axios.get(cobin_hood.get_all_trading_pairs)
-        .then(function(response){
-            //console.log(response.data.result.trading_pairs.slice());
-            return response.data.result.trading_pairs.slice();
-        });
+
+function request_get_order_book(pair) {
+    return axios.get(cobin_hood.get_order_book+pair)
 }
 
+// Make a request for a user with a given ID
+
+let requests = [];
+requests.push(request_get_order_book('ETH-USD'));
+requests.push(request_get_order_book('BTC-USD'));
 
 function multiple_axios() {
     // Requests will be executed in parallel...
-    console.log(cobin_hood.get_order_book+"EOS-ETH")
-    axios.all([
-        axios.get(cobin_hood.get_order_book+"EOS-ETH"),
-        axios.get(cobin_hood.get_order_book+"BTC-USD")
-        //axios.get(host+get_all_trading_pairs+"ETHOS-ETH")
-])
-.then(axios.spread(function (userResponse, reposResponse) {
-        //... but this callback will be executed only when both requests are complete.
-        console.log('User', userResponse.data);
-        //console.log('Repositories', reposResponse.data);
-       // console.log('Repositories', reposResponse.data.result.orderbook);
-       // console.log('request', spread.get_spread(reposResponse.data));
-    }));
-}
-function request_pairs(url) {
+    axios.all(requests)
+        .then(axios.spread(function () {
+            // Both requests are now complete
+            //console.log(acct);
+            //console.log(perms);
 
-    axios.get('http://jsonplaceholder.typicode.com/todos')
-        .then(function (response) {
-            return response.body;
-        })
-        .catch(function (error) {
-            return error;
-        });
+            for (let index=0;index < arguments.length;index++) console.log(arguments[index].data);
+        }));
 }
-console.log(request_pairs());
+
+multiple_axios();
+
 
 
 
