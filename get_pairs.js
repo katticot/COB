@@ -1,23 +1,10 @@
 var request = require('request');
+var cobin_hood = require('./cobinhood');
+
 var pairs = [];
 
-const host ="https://api.cobinhood.com"
-//Http to curl :https://curlbuilder.com/
-//curl to JS   :https://curl.trillworks.com/
-// Public 
-//-----------------------------------------------
-//System
-const get_system_time ="/v1/system/time"
-const get_system_info ="/v1/system/info"
-//Market
-const get_all_currenciers   ="/v1/market/currencies"
-const get_all_trading_pairs ="/v1/market/trading_pairs"
-const get_order_book        = "/v1/market/orderbooks/" // /v1/market/orderbooks/<trading_pair_id> get with get_all_trading_pairs
-const get_trading_statistics="/v1/market/stats/"
-const get_tickers           = "/v1/market/tickers/" // /v1/market/tickers/<trading_pair_id> get with get_all_trading_pairs
-module.exports ;const recent_trades         ="/v1/market/trades/"    // /v1/market/trades//<trading_pair_id> get with get_all_trading_pairs      
 const options = {
-    url: host+get_all_trading_pairs
+    url: cobin_hood.get_all_trading_pairs
 };
 
 function lister_les_paires () {
@@ -35,7 +22,7 @@ function lister_les_paires () {
         }
     };
     request(options, callback);
-};
+}
 let get_all_pairs;
 module.exports.get_all_pairs = lister_les_paires;
 
