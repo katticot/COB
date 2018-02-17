@@ -1,5 +1,4 @@
-const request = require('request');
-let pairs = [];
+const axios = require('axios');
 
 let host ="https://api.cobinhood.com";
 //Http to curl :https://curlbuilder.com/
@@ -7,7 +6,6 @@ let host ="https://api.cobinhood.com";
 // Public 
 //-----------------------------------------------
 //System
-
 const get_system_info =host+"/v1/system/info/";
 const get_system_time =host+"/v1/system/time/";
 //Market
@@ -26,63 +24,12 @@ module.exports ={get_system_info,
         get_tickers,
         get_recent_trades,
         };
-const options = {
-    //url: host+get_order_book+paire
-};
-
-
-// options.url=host+get_trading_statistics
-// function callback(error, response, body) {
-    
-//     if (!error && response.statusCode == 200) {
-//         // console.log(json_response);
-//         var json_response =JSON.parse(body).result[0]
-
-//         // console.log(options.url);
-//         console.log(json_response)
-//     }
-// }
-
-options.url=get_all_trading_pairs;
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        // console.log(json_response);
-        let json_response =JSON.parse(body).result.trading_pairs;
-        for (let pair in json_response) {
-            pairs.push(json_response[pair].id)
-          }
-
-
-
-    for (let pair in pairs) {
-
-    console.log("paire :"+pairs[pair]);
-
-    options.url=host+get_order_book+pairs[pair];
-    function callback(error, response, body) {
-        console.log(options.url)
-        if (!error && response.statusCode == 200) {
-            var json_response =JSON.parse(body).result.orderbook
-            var spread = ((json_response.bids[0][0]-json_response.asks[0][0])/json_response.bids[0][0]*100)
-            //console.log(json_response.bids[0]);
-            //console.log(json_response.asks[0]);
-            console.log(paire + " :"+spread);
-        }
-    }
-  }
-        // console.log(options.url);
-
-    }
+function request() {
+    axios.get('/user?ID=12345')
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
 }
-
-// for (var pair in pairs) {
-//     console.log("paire :"+pairs[pair])
-//   }
-
-
-
-
-//request(options, callback);
-
-
-

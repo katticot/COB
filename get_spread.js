@@ -30,6 +30,12 @@ let options = {
          var spread = ((orderbook.bids[0][0]-orderbook.asks[0][0])/orderbook.bids[0][0]*100)
          console.log(" :"+spread);
          return spread
+     },
+
+     "get_spread_axios" : function (orderbook){
+
+         var spread = ((orderbook.bids[0][0]-orderbook.asks[0][0])/orderbook.bids[0][0]*100)
+         return spread
      }
 
 };
@@ -38,6 +44,7 @@ let get_spread;
 let request_get_spread;
 exports.request_get_spread=public.request_get_spread;
 exports.get_spread=public.get_spread;
+exports.get_spread_axios=public.get_spread_axios;
 
 //public.request_get_spread("ETHOS-ETH")
 

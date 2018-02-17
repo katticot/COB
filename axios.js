@@ -1,5 +1,6 @@
 let axios = require("axios");
 let cobin_hood = require('./cobinhood');
+let spread = require('./get_spread.js');
 
 //Http to curl :https://curlbuilder.com/
 //curl to JS   :https://curl.trillworks.com/
@@ -14,9 +15,9 @@ function request_get_order_book(pair) {
 
 let requests = [];
 requests.push(request_get_order_book('ETH-USD'));
-requests.push(request_get_order_book('BTC-USD'));
+//requests.push(request_get_order_book('BTC-USD'));
 
-function multiple_axios() {
+function multiple_spread(requests) {
     // Requests will be executed in parallel...
     axios.all(requests)
         .then(axios.spread(function () {
@@ -24,11 +25,16 @@ function multiple_axios() {
             //console.log(acct);
             //console.log(perms);
 
-            for (let index=0;index < arguments.length;index++) console.log(arguments[index].data);
+            //for (let index=0;index < arguments.length;index++)  datas.push(arguments[index].data);
+            for (let index=0;index < arguments.length;index++) console.log('spread: '+spread.get_spread_axios(arguments[index].data.result.orderbook));
+
+
         }));
 }
 
-multiple_axios();
+multiple_spread(requests);
+
+
 
 
 
