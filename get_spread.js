@@ -1,4 +1,4 @@
-//Todo
+//Todo utiliser axios
 // faire un array d'objet contenant la propriété spread lié à une map du type [paire]=spread de la paire
 var request = require('request');
 var cobin_hood = require('./cobinhood');
